@@ -1,0 +1,203 @@
+@keyframes text-animation {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(2px) rotate(-2deg);
+    }
+    50% {
+        transform: translateX(0) rotate(0deg);
+    }
+    75% {
+        transform: translateX(-2px) rotate(2deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url(/img/bg-musico-login.jpg);
+    backdrop-filter: blur(10px) brightness(0.5);
+    background-size: cover;
+    color: white;
+    user-select: none;
+    min-height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 9% 88% 3%;
+}
+.section-1{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    height: 8vh;
+    font-family: 'Signika Negative', sans-serif;
+}
+.section-1 a{
+    text-decoration: none;
+}
+.section-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    min-width: 50vw;
+    min-height: 50vh;
+}
+.section-2 h1{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 60px;
+}
+.section-2 p{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+    margin-top: 25px;
+}
+.welcome-section p{
+    animation: text-animation 3s infinite;
+}
+.section-3{
+    display: grid;
+    grid-template-columns: auto;
+}
+.welcome-section {
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome-section p{
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 100;
+}
+.container-login{
+    background-color: #cac2c29d;
+    border: 1px solid transparent;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Signika Negative', sans-serif; 
+}
+.login-form{
+    padding: 25px;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    height: 100%;
+    width: 100%;
+}
+.login-form h2{
+    margin: auto;
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+}
+.login-inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+}
+.login-inputs input{
+    width: 18vw;
+    height: 4vh;
+    border: none;
+    border-radius: 10px;
+    transition: all 300ms ease-in-out;
+    padding-left: 10px;
+}
+.login-inputs input:hover{
+    width: 19vw;
+}
+.login-inputs input:focus{
+    width: 19vw;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 15vw;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    font-family: 'Signika Negative', sans-serif;
+}
+button:hover {
+    background-color: #555;
+    width: 16vw;
+}
+nav h1{
+    margin: auto;
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+}
+nav h3{
+    margin: auto;
+    font-size: 20px;
+    padding: 15px;
+    text-align: end;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+nav h3:hover{
+    color: rgb(204, 204, 204);
+}
+.ingresos-adicionales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.ingresos-adicionales button{
+    display: flex;
+    cursor: pointer;
+    width: 15vw;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    transition: all 500ms ease-in-out;
+}
+.ingresos-adicionales button:hover{
+    width: 16vw;
+    height: 5vh;
+}
+.ingresos-adicionales a{
+    margin-top: 25px;
+    text-decoration: none;
+}
+.parrafo-para-registro{
+    margin-top: 50px;
+    font-size: 0px;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 100;
+}
+.parrafo-para-registro a{
+    color: white;
+}
