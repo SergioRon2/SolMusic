@@ -1,6 +1,6 @@
 const musicianButton = document.getElementById("musician-button");
 const clientButton = document.getElementById("client-button");
-let parrafoCambiante = document.getElementById("parrafo-cambiante");
+const parrafoCambiante = document.getElementById("parrafo-cambiante");
 
 
 musicianButton.addEventListener("click", () => {
@@ -210,4 +210,6 @@ const frasesMusicales = [
 ];
 
 const randomIndex = Math.floor(Math.random() * frasesMusicales.length);
-        parrafoCambiante.textContent = `"${frasesMusicales[randomIndex]}"`;
+parrafoCambiante.textContent = `"${frasesMusicales[randomIndex]}"`;
+
+

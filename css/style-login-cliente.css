@@ -169,7 +169,7 @@ nav h3:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 .ingresos-adicionales button{
     display: flex;
