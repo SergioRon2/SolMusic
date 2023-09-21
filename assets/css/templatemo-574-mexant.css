@@ -1234,6 +1234,14 @@ page heading
   padding: 215px 0px 120px 0px;
   text-align: center;
 }
+.page-heading-3 {
+  background-image: url(../images/heading-bg-3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 215px 0px 120px 0px;
+  text-align: center;
+}
 
 .page-heading h2 {
   font-size: 56px;
@@ -1246,6 +1254,11 @@ page heading
   color: #fff;
   font-weight: 700;
 }
+.page-heading-3 h2 {
+  font-size: 56px;
+  color: #fff;
+  font-weight: 700;
+}
 
 .page-heading .div-dec {
   width: 80px;
@@ -1254,8 +1267,14 @@ page heading
   background-color: #fff;
   margin: 20px auto 0 auto;
 }
-
 .page-heading-2 .div-dec {
+  width: 80px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 20px auto 0 auto;
+}
+.page-heading-3 .div-dec {
   width: 80px;
   height: 6px;
   border-radius: 3px;
