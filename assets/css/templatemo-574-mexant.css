@@ -149,6 +149,12 @@ body {
   .mobile-bottom-fix-big {
     margin-bottom: 60px;
   }
+  .calculator{
+    margin-bottom: 20px;
+  }
+  .partners{
+    display: none;
+  }
 }
 
 .green-button a {
@@ -1220,6 +1226,14 @@ page heading
   padding: 215px 0px 120px 0px;
   text-align: center;
 }
+.page-heading-2 {
+  background-image: url(../images/heading-bg-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 215px 0px 120px 0px;
+  text-align: center;
+}
 
 .page-heading h2 {
   font-size: 56px;
@@ -1227,7 +1241,21 @@ page heading
   font-weight: 700;
 }
 
+.page-heading-2 h2 {
+  font-size: 56px;
+  color: #fff;
+  font-weight: 700;
+}
+
 .page-heading .div-dec {
+  width: 80px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 20px auto 0 auto;
+}
+
+.page-heading-2 .div-dec {
   width: 80px;
   height: 6px;
   border-radius: 3px;
@@ -1346,6 +1374,10 @@ section.what-we-do {
   top: 10px;
 }
 
+.btn{
+  background-color: #ff511a;
+  color: #fff;
+}
 
 
 /* 
