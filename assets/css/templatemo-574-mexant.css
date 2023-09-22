@@ -640,11 +640,10 @@ header
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #f7f7f7 !important;
-    color: #191a20 !important;
+    background: #f7f7f7;
+    color: #191a20;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #eee !important;
     color: #ff511a!important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
@@ -1682,7 +1681,8 @@ body {
 
 @media (max-width: 992px) {
   .header-area .main-nav .nav li:last-child {
-    display: none;
+    display: inline-block;
+    background-color: #43ba7f;
   }
   .header-area .main-nav .nav li ul li:last-child {
     display: inline-block;
