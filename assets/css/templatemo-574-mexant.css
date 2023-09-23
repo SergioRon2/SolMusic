@@ -1827,6 +1827,7 @@ body {
   section.map .info-item {
     margin-top: 30px;
   }
+  
 }
 
 @media (max-width: 767px) {
@@ -1878,5 +1879,9 @@ body {
   }
   .testimonials .item {
     padding: 50px;
+  }
+  .col-lg-8{
+    display: flex;
+    justify-content: center;
   }
 }
