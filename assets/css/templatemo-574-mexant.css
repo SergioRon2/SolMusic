@@ -712,6 +712,29 @@ banner
   background-position: center;
 }
 
+@media (max-width:500px) {
+  .slide-inner .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .slide-inner .container .header-text{
+    justify-content: center;
+  }
+  .slide-inner .container .header-text .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .slide-inner .container .header-text .buttons > div{
+    display: flex;
+    margin: auto;
+  }
+  .col-lg-8{
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .swiper-slide-active h2 {
   animation: fadeInLeft .8s;
   -webkit-animation-delay: 1s;
@@ -897,13 +920,14 @@ section.simple-cta .buttons .green-button {
 @media (max-width: 767px) {
   .slide-inner .header-text h2 {
     font-size: 2em;
+    line-height: 50px;
   }
 }
 
 @media (max-width: 400px) {
   .slide-inner .header-text h2 {
     font-size: 4ex;
-  }
+  }  
 }
 
 /*
@@ -1018,6 +1042,15 @@ section.about-us .right-content p {
   margin-bottom: 50px;
 }
 
+@media (max-width:500px) {
+  .about-us .section-heading, .mb-5 > h2{
+    text-align: center;
+  }
+  .about-us .section-heading, .mb-5 > p{
+    margin-top: 20px;
+    padding: 10px;
+  }
+}
 
 /*
 ---------------------------------------------
