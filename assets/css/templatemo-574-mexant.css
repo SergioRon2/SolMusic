@@ -1344,7 +1344,9 @@ page heading
   margin: 20px auto 0 auto;
 }
 
-
+.contact-us-form > .container{
+  margin-top: -70px;
+}
 
 /* 
 ---------------------------------------------
