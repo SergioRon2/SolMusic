@@ -867,7 +867,7 @@ cta
 */
 
 section.simple-cta {
-  background-image: url(../images/cta-bg.jpg);
+  background-image: url(../images/cta-bg.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1060,7 +1060,7 @@ calculator
 
 section.calculator {
   margin-top: 150px;
-  background-image: url(../images/calculator-bg.jpg);
+  background-image: url(../images/calculator-bg.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1262,7 +1262,7 @@ page heading
 */
 
 .page-heading {
-  background-image: url(../images/heading-bg.jpg);
+  background-image: url(../images/heading-bg.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1270,7 +1270,7 @@ page heading
   text-align: center;
 }
 .page-heading-2 {
-  background-image: url(../images/heading-bg-2.jpg);
+  background-image: url(../images/heading-bg-2.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1278,7 +1278,7 @@ page heading
   text-align: center;
 }
 .page-heading-3 {
-  background-image: url(../images/heading-bg-3.jpg);
+  background-image: url(../images/heading-bg-3.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1286,7 +1286,7 @@ page heading
   text-align: center;
 }
 .page-heading-4 {
-  background-image: url(../images/heading-bg-4.jpg);
+  background-image: url(../images/heading-bg-4.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
