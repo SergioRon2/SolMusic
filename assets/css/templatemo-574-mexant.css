@@ -1750,7 +1750,7 @@ body {
     background-color: #43ba7f;
   }
   .header-area .main-nav .nav li ul li:last-child {
-    display: inline-block;
+    display: none;
   }
   .header-area {
     background-color: #212741;
