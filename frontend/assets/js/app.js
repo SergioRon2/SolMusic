@@ -213,3 +213,9 @@ const randomIndex = Math.floor(Math.random() * frasesMusicales.length);
 parrafoCambiante.textContent = `"${frasesMusicales[randomIndex]}"`;
 
 
+let icono = document.getElementById("icono");
+
+icono.addEventListener('click', () => {
+    icono.classList.remove("fa-regular");
+    icono.classList.add("fa-solid");
+})

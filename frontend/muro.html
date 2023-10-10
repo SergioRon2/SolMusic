@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>SolMusic</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/ce169708bd.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area sticky-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav d-flex justify-content-between align-items-center">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="muro.html" class="logo">
+                        <img src="assets/images/logo.png" alt="" style="width: 50px;">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav d-flex align-items-center">
+                        
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menú</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- ***** muro ***** -->
+
+  <div class="muro">
+      <div class="column-1 text-light">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true"><i class="fas fa-house mx-2"></i>Inicio</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-music mx-2"></i>Generos</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-star mx-2"></i>Favoritos</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-comment mx-2"></i>Chat</a>
+          </div>
+      </div>
+      <div class="column-2">
+        <div class="post">
+          <div class="user">
+            <div class="name-follow">
+              <p><i class="fas fa-user mx-2"></i>Random123</p>
+              <button type="button" class="follow mx-1">Seguir</button>
+            </div>
+            <div class="time-published">
+              <span>Ahora</span>
+            </div>
+          </div>
+          <div class="image"></div>
+          <div class="cuerpo-mensaje">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nihil voluptas, nemo dignissimos voluptatum eos magni dolor consectetur laboriosam quia ex eligendi facere, modi quasi adipisci harum animi! Quam, voluptates.</p>
+          </div>
+          <div class="icons">
+            <i class="fa-regular fa-heart" id="icono"></i>
+            <i class="fa-regular fa-comment" id="icono"></i>
+            <i class="fa-regular fa-star" id="icono"></i>
+          </div>
+        </div>
+      </div>
+  </div>  
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        var interleaveOffset = 0.5;
+
+      var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          progress: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              var slideProgress = swiper.slides[i].progress;
+              var innerOffset = swiper.width * interleaveOffset;
+              var innerTranslate = slideProgress * innerOffset;
+              swiper.slides[i].querySelector(".slide-inner").style.transform =
+                "translate3d(" + innerTranslate + "px, 0, 0)";
+            }      
+          },
+          touchStart: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = "";
+            }
+          },
+          setTransition: function(speed) {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = speed + "ms";
+              swiper.slides[i].querySelector(".slide-inner").style.transition =
+                speed + "ms";
+            }
+          }
+        }
+      };
+
+      var swiper = new Swiper(".swiper-container", swiperOptions);
+    </script>
+
+  </body>
+</html>

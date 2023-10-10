@@ -1,0 +1,109 @@
+body{
+    overflow: visible;
+    max-height: 100vh;
+}
+.header-area{
+    position: relative;
+}
+.muro{
+    height: 89.5vh;
+    margin-top: 10.5vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+}
+.muro > .column-1{
+    padding: 20px;
+    width: 100%;
+    background-color: #212537;
+}
+.muro > .column-2{
+    padding: 20px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+.post{
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    gap: 30px;
+    background-color: #eee;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-group-item{
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+.list-group-item:hover{
+    background: transparent;
+    color: #ffa500;
+}
+.list-group-item:focus{
+    background: transparent;
+    color: #ffa500;
+}
+.list-group-item:active{
+    background: transparent;
+    color: #ff6600;
+}
+
+.user{
+    display: grid;
+    grid-template-columns: 1fr 10%;
+    width: 100%;
+}
+
+.user .name-follow{
+    display: flex;
+    flex-direction: row;
+}
+
+.user .follow{
+    border: 1px solid #212537;
+    font-size: .8em;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.user .follow:hover{
+    border: 1px solid #212537;
+    background-color: #212537;
+    color: #fff;
+    font-size: .8em;
+}
+
+.user .time-published{
+    font-size: 1em;
+}
+
+.image{
+    background-image: url(../images/calculator-bg.webp);
+    background-size: cover;
+    width: 550px;
+    height: 500px;
+}
+
+.icons i{
+    font-size: 3ex;
+    margin: 0 2px;
+}
+
+@media (max-width:992px) {
+    .muro > .column-1{
+        display: none;
+    }
+    .muro > .column-2{
+        margin: auto;
+        width: 100vw;
+        height: 100%;
+    }
+}
