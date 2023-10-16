@@ -1,9 +1,22 @@
+.fw-bolder{
+    display: none;
+}
+
+@media (max-width:992px) {
+    .fw-bolder{
+        display: block;
+    }
+}
+
+
+
+/* Esto que viene abajo se supone que es del muro */
+
+
+
 body{
     overflow: visible;
     max-height: 100vh;
-}
-.header-area{
-    position: relative;
 }
 .muro{
     height: 89.5vh;
