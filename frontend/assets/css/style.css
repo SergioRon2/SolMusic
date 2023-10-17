@@ -16,11 +16,17 @@
 
 body{
     overflow: visible;
-    max-height: 100vh;
+    min-height: 100vh;
 }
+
+.body-muro{
+    background-image: url(../images/muro-bg.jpg);
+    background-size: cover;
+    backdrop-filter: blur(20px) !important;
+}
+
 .muro{
-    height: 89.5vh;
-    margin-top: 10.5vh;
+    height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: 15% 1fr;
@@ -52,10 +58,47 @@ body{
     flex-direction: column;
 }
 
+@keyframes animacion-hover {
+    0%{
+        box-shadow: 0px 1px 10px 9px #ff660077;
+        background-color: #ff660077;
+    }
+    25%{
+        box-shadow: 0px 1px 10px 9px #ff660033;
+        background-color: #ff660033;
+    }
+    50%{
+        box-shadow: 0px 1px 10px 9px #ff660077;
+        background-color: #ff660077;
+    }
+    75%{
+        box-shadow: 0px 1px 10px 9px #ff660033;
+        background-color: #ff660033;
+    }
+    100%{
+        box-shadow: 0px 1px 10px 9px #ff660077;
+        background-color: #ff660077;
+    }
+}
+
+
+.logo > img{
+    border-radius: 40%;
+    padding: 5px;
+    transition: all .2s ease;
+}
+.logo > img:hover{
+    animation: animacion-hover 5s infinite;
+}
+
+.list-group{
+    margin-top: 30px;
+}
 .list-group-item{
     background: transparent;
     color: #fff;
     border: none;
+    transition: all .2s ease-in-out;
 }
 .list-group-item:hover{
     background: transparent;
